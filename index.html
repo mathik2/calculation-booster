@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calc. booster</title>
+    <link rel="stylesheet" href="calcbooster.css">
+    <script defer src="calcbooster.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1>calculation booster</h1>
+        <h3>Select any one set of questions</h3>
+        <button onclick="ten_questions()">10 Questions</button>
+        <button onclick="twenty_questions()">20 Questions</button>
+        <h3>Click start to start with time</h3>
+
+        <button onclick="interval=setInterval(start,1000);">start</button>
+
+        <p class="time"> 60 </p>
+
+        <ol id="questions"></ol>
+
+        <button onclick="get_marks()">Check score</button>
+        <button onclick="start_new()"> start New</button>
+
+        <p id="result"></p>
+    </div>
+    <footer> &#169 CopyRights Reserved 2020</footer>
+</body>
+
+</html>
